@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>rupee madness!</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lusitana" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="assets/main.css" rel="stylesheet" type="text/css">
+    
+
+</head>
+<body>
+
+<div id="header" class="row">
+    <div class="col-lg-12">
+    <h1><b>Rupee Madness!</b></h1>
+    </div>
+</div>    
+
+<div id="main" class="row">
+    <p>Oh no! A wizard played a prank and changed all the values of these rupees!
+        <br> 
+    Figure out how much each rupee is worth so you can buy a banishing spell 
+    to get rid of this annoying wizard.</p>
+</div>
+
+
+<div id="wins-and-losses" class="row">
+    <div class="col-md-6" >
+        <p>Wins: <span id="number-wins"></span></p>
+    </div>
+    <div class="col-md-6" >
+        <p>Losses: <span id="number-losses"></span></p>
+    </div>
+</div>
+
+<div class="row">
+    <div id="banishing-spell" class="col-lg-12">
+        <p>Banishing spell market price: 
+            <span id="rupees-to-guess"></span>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div id="counter" class="col-lg-12">
+        <p>Rupees so far: 
+            <span id="final-rupees"></span>
+        </p>
+    </div>
+</div>
+
+<audio id="audio" src="http://noproblo.dayjo.org/ZeldaSounds/OOT/OOT_Get_Rupee.wav"></audio>
+
+
+    
+<!--linking javascript-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/main.js"></script>
+
+<!--I MADE SOUNDS!!!!!!!!!!!!!-->
+<script>
+        function play(){
+                var audio = document.getElementById("audio");
+                audio.play();
+                        }
+            </script>
+
+<audio id="audio" src="http://noproblo.dayjo.org/ZeldaSounds/OOT/OOT_Get_Rupee.wav" ></audio>
+
+<!--rupee images-->
+    <div id="rupees" class="row">
+
+    <img src="assets/images/purple.png" class="rupee-img" id="purple" alt="purple" value="PLAY"  onclick="play()">
+    <img src="assets/images/green.png" class="rupee-img" id="green" alt="green" value="PLAY"  onclick="play()">
+    <img src="assets/images/red.png" class="rupee-img" id="red" alt="red" value="PLAY"  onclick="play()">
+    <img src="assets/images/silver.png" class="rupee-img" id="silver" alt="silver" value="PLAY"  onclick="play()">
+    <img src="assets/images/blue.png" class="rupee-img" id="blue" alt="blue" value="PLAY"  onclick="play()">
+</div>
+        
+</body>
+</html>
